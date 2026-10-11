@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Instructions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #1565c0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #1565c0;
+        }
+
+        li {
+            margin: 12px 0;
+        }
+
+        button {
+            background-color: #1565c0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d47a1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Computer Instructions</h1>
+        <p>A Beginner's Guide to Using a Computer</p>
+    </header>
+
+    <main>
+        <h2>Basic Computer Steps</h2>
+
+        <ol>
+            <li>Connect the computer to a power supply.</li>
+            <li>Turn on the power button.</li>
+            <li>Wait for the operating system to load.</li>
+            <li>Enter your password if required.</li>
+            <li>Use the mouse and keyboard to work.</li>
+            <li>Open programs such as a web browser or Notepad.</li>
+            <li>Save your work when necessary.</li>
+            <li>Close your programs when finished.</li>
+            <li>Shut down the computer using the system menu.</li>
+        </ol>
+
+        <h2>Computer Safety Tips</h2>
+
+        <ul>
+            <li>Keep food and drinks away from the computer.</li>
+            <li>Do not share your password.</li>
+            <li>Avoid downloading unknown files.</li>
+            <li>Save your work regularly.</li>
+        </ul>
+
+        <button onclick="showMessage()">
+            Click for a Tip
+        </button>
+
+        <p id="message"></p>
+    </main>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Remember to save your work regularly!";
+        }
+    </script>
+
+</body>
+</html>
